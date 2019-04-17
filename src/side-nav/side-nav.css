@@ -1,0 +1,56 @@
+.sideNavContainer {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 20vw;
+    height: 100vh;
+    
+}
+
+.sideNavOpenButton {
+    position: absolute;
+     left: 10px;
+     top: 10px;
+} 
+
+.sideNavInner {
+    transition-timing-function: ease-in;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    left: -20vw;
+    opacity: 0;
+    background-color: #3B8EA5;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+}
+
+.sideNavInner.open {
+    left: 0;
+    opacity: 1;
+}
+
+.linkContainer {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: white;
+    
+}
+
+.linkContainer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+
+.sideNavCloseButton {
+    position: relative;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
